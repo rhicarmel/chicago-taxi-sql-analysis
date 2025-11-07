@@ -9,6 +9,8 @@ The goal is to forecast the number of taxi rides for the next hour, helping disp
 
 🔗 [View the full notebook here](./TaxiOrders(TimeSeries).ipynb)
 
+[▶️ Launch Interactive App](https://deepnote.com/app/projects-8f6f/Rhiannon-Fillinghams-Untitled-project-e4fcc3d3-5168-437d-83da-8e0f449fef77?utm_source=app-settings&utm_medium=product-shared-content&utm_campaign=data-app&utm_content=e4fcc3d3-5168-437d-83da-8e0f449fef77)
+
 ---
 
 ## Functionality
