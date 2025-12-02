@@ -16,13 +16,10 @@ ENV/
 # Ignore macOS system files
 .DS_Store
 
-# Ignore data dumps or large raw files you don’t want on GitHub
+# Ignore data files except those in /data
 *.csv
 *.tsv
 *.parquet
-*.sqlite
-*.db
 
-# But allow data folder if needed
 !data/
-
+!data/*.csv
