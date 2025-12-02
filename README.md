@@ -1,29 +1,30 @@
-# 🚖 CHICAGO TAXI DEMAND FORECASTING (TIME SERIES PROJECT)
+# 🚖 Chicago Taxi SQL Analysis | Time-Series Project
 
 ## Overview
-A machine learning project predicting **hourly taxi orders at Chicago airports** using historical demand data from **Sweet Lift Taxi**.  
-The goal is to forecast the number of taxi rides for the next hour, helping dispatchers attract more drivers during peak hours.
+A complete SQL and time-series analysis of **Chicago taxi and weather data** to uncover demand patterns, company performance, and external factors affecting ride durations.
 
 **Goal:** Predict taxi orders with an RMSE ≤ 48.  
 **Best Model:** 🏆 Scaled Linear Regression (RMSE = 34.89)
 
-🔗 [View the full notebook here](./TaxiOrders(TimeSeries).ipynb)
+### Run Notebook
+[![Run Notebook](https://img.shields.io/badge/📓_Open_Notebook-orange?style=for-the-badge)](./notebooks/TaxiOrders(TimeSeries).ipynb)
 
 ---
 
 ## Functionality
-- Resamples raw order data into hourly intervals.  
-- Conducts exploratory data analysis to uncover **trends and seasonality**.  
-- Builds lag features and rolling averages to model temporal dependencies.  
-- Tests and tunes multiple models: Linear Regression, Random Forest, and Gradient Boosting.  
-- Evaluates performance using RMSE and time series cross-validation.
+- SQL-based data retrieval and cleaning  
+- Time-series and spatial exploratory data analysis  
+- Weather and trip-condition comparison  
+- Hypothesis testing to assess weather impact on O’Hare-bound trips  
+- Business-oriented insights for operational optimization  
 
 ---
 
+
 ## Key Insights
-- Taxi demand shows **strong daily seasonality** (predictable hourly cycles).  
-- **Feature scaling** improved Linear Regression’s forecasting accuracy.  
-- Tree-based models (Random Forest, Gradient Boosting) performed well but were less consistent.  
+- Identified high-demand locations and company performance patterns  
+- Determined weather’s statistical effect on O’Hare-bound trips  
+- Improved SQL query performance and analysis workflow  
 - Final model comfortably surpassed project requirements (RMSE ≤ 48).
 
 ---
@@ -35,10 +36,18 @@ The goal is to forecast the number of taxi rides for the next hour, helping disp
 | Random Forest | 42.45 | Stable, interpretable |
 | Gradient Boosting | 45.66 | Slightly weaker |
 
+
+| Area | Key Finding | Impact |
+|------|-------------|--------|
+| Demand Patterns | High-volume pickup clusters around O’Hare and downtown | Supports targeted driver allocation |
+| Weather Effects | Weather increases delays on airport trips | Improves planning of buffer times |
+| Company Trends | Clear performance differences across operators | Guides operational strategy |
+
 ---
 
 ## Tech Stack
-**Python**, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
+**SQL**, PostgreSQL, Pandas, NumPy, Matplotlib, Seaborn, SciPy
+
 *Developed in Jupyter Notebook*
 
 ---
@@ -60,16 +69,14 @@ jupyter notebook TaxiOrders(TimeSeries).ipynb
 
 ## Future Improvements
 
-- Integrate Prophet or SARIMA models for improved seasonality forecasting.
-
-- Add external factors like weather, flight schedules, or city events.
-
-- Deploy as a real-time API for predictive dispatching.
+- Integrate flight schedules, city events, or weather data for deeper insight
+- Build an interactive Streamlit dashboard
+- Add forecasting models using time-series or machine learning
+- Expand spatial mapping of pickup and dropoff clusters
 
 ---
 
 ## Author
+**Rhiannon Fillingham**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rhiannonfilli)
 
-Rhiannon Fillingham
-
-📎 [LinkedIn](www.linkedin.com/in/rhiannonfilli)
