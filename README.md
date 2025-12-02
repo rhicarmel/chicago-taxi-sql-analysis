@@ -2,6 +2,7 @@
 
 ## Overview
 A complete SQL and time-series analysis of **Chicago taxi and weather data** to uncover demand patterns, company performance, and external factors affecting ride durations.
+This project includes a full SQL analysis phase, with all queries and output results stored in the `/sql` and `/data` directories.
 
 **Goal:** Predict taxi orders with an RMSE ≤ 48.  
 **Best Model:** 🏆 Scaled Linear Regression (RMSE = 34.89)
