@@ -6,6 +6,23 @@ A complete SQL and time-series analysis of **Chicago taxi and weather data** to 
 **Goal:** Predict taxi orders with an RMSE ≤ 48.  
 **Best Model:** 🏆 Scaled Linear Regression (RMSE = 34.89)
 
+### Project Background
+This project is based on a case study for **Zuber**, a new ride-sharing company launching in Chicago.  
+The analysis uses competitor taxi data and weather records to:
+
+- Understand passenger preferences and neighborhood demand
+- Compare company performance across Chicago
+- Test whether **rainy weather on Saturdays** changes the duration of rides from the Loop to O’Hare International Airport
+
+### Data Sources
+- Relational database with four main tables: `neighborhoods`, `cabs`, `trips`, and `weather_records`
+- Historical hourly weather in Chicago (November 2017), parsed from: 
+  [Chicago Weather 2017 HTML](https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html)
+
+## SQL Queries
+The original SQL analysis was completed in a database environment.  
+All SQL queries used in this project are included in the `sql/` folder.
+
 ### Run Notebook
 [![Run Notebook](https://img.shields.io/badge/📓_Open_Notebook-orange?style=for-the-badge)](./notebooks/TaxiOrders(TimeSeries).ipynb)
 
