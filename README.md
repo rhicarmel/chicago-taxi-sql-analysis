@@ -20,8 +20,16 @@ The analysis uses competitor taxi data and weather records to:
   [Chicago Weather 2017 HTML](https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html)
 
 ## SQL Queries
-The original SQL analysis was completed in a database environment.  
-All SQL queries used in this project are included in the `sql/` folder.
+This project includes a full SQL analysis phase completed before the Python notebook.  
+All SQL scripts are available in the `/sql` folder, including:
+
+- Weather data parsing
+- Company trip frequency analysis
+- Location-based demand patterns
+- Weather condition grouping
+- Loop to O’Hare Saturday ride analysis
+
+These SQL outputs were exported as CSVs and used for the Python-based EDA, time-series analysis, and hypothesis testing.
 
 ### Run Notebook
 [![Run Notebook](https://img.shields.io/badge/📓_Open_Notebook-orange?style=for-the-badge)](./notebooks/TaxiOrders(TimeSeries).ipynb)
